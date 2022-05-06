@@ -1,0 +1,293 @@
+.App {
+  height: 100vh;
+  min-width: 100vw;
+  overflow: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.App::-webkit-scrollbar { 
+  display: none; 
+}
+
+.Menu {
+  position: fixed;
+  left: 0pt;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.FooterTitle {
+  width: 100vw;
+  position: fixed;
+  bottom: -0.5em;
+  font-size: min(300pt, 20vw);
+  text-align: center;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+.FooterTitle[dim="true"] {
+  opacity: 0.4;
+}
+
+.AboutSectionIntersectorCard {
+  height: 0pt;
+  width: 0pt;
+}
+
+.AboutSection {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 101vw;
+  height: 100vh;
+}
+
+.StickyTitle {
+  width: 90vw;
+  position: fixed;
+  left: 10vw;
+  top: 0pt;
+  z-index: 1;
+  transition: opacity 0.5s;
+}
+
+.Title {
+  /* width: 100vw; */
+  font-size: min(200pt, 25vw);
+  transition: font-size 1s, letter-spacing 0.2s;
+  pointer-events: none;
+}
+
+.Title[isdescriptionvisible="false"] {
+  font-size: min(200pt, 25vw);
+}
+
+.Title[isdescriptionvisible="true"] {
+  font-size: min(100pt, 15vw);
+}
+
+.Subtitle {
+  margin-top: min(5vw, 150pt);
+  font-size: calc(12pt + 1.5vw);
+  font-family: Roboto;
+  transition: margin-top 0.5s;
+  pointer-events: none;
+}
+
+.Subtitle[isdescriptionvisible="false"] {
+  margin-top: min(5vw, 150pt)
+}
+
+.Subtitle[isdescriptionvisible="true"] {
+  margin-top: min(2vw, 50pt);
+}
+
+.Description {
+  margin-top: min(3vw, 70pt);
+  font-size: calc(10pt + 1vw);
+  font-family: Roboto;
+  opacity: 0;
+  transition: opacity 0.5s;
+  max-width: 50vw;
+  color: #c3c3c3;
+  pointer-events: none;
+}
+
+.Description[isdescriptionvisible="false"] {
+  opacity: 0;
+}
+
+.Description[isdescriptionvisible="true"] {
+  opacity: 1;
+}
+
+@keyframes DescriptionAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.SerifFont {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  letter-spacing: -0.1em
+}
+
+.SansSerifFont {
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.SansSerifItalicFont {
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  letter-spacing: -0.11em;
+  font-weight: 500;
+}
+
+.Demo1 {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(1) blur(0pt);
+  transition: filter 0.5s;
+}
+
+.FloatingDescription {
+  position: absolute;
+  padding: 8pt;
+  top: 0pt;
+  left: 0pt;
+  right: 0pt;
+  bottom: 0pt;
+  background: #000000d0;
+  /* border-radius: 20pt; */
+  transition: opacity 0.5s;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.TCard:hover .FloatingDescription{
+  opacity: 0;
+}
+
+.TCard:hover .Demo1 {
+  filter: grayscale(0) blur(0);
+}
+
+.TitleText {
+  font-size: 5em;
+  text-align: center;
+  width: 100%;
+}
+
+.SubtitleText {
+  margin-top: 20pt;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 8pt;
+}
+
+.WhatsNewSectionEntry {
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  /* background: black; */
+  z-index: 1;
+  padding-right: 1pt;
+}
+
+.WhatsNewEntryPadding {
+  flex: 1;
+}
+
+.EntryTitle {
+  align-self: flex-start;
+  position: sticky;
+  right: 200pt;
+  top: 0pt;
+  z-index: 1;
+  font-size: min(150pt, 20vh);
+  transition: font-size 1s, letter-spacing 0.2s;
+  writing-mode: vertical-lr;
+  transition: right 0.7s, opacity 0.5s;
+}
+
+.EntryTitle[section="1"] {
+  opacity: 1;
+  right: 200pt;
+}
+
+.EntryTitle[section="2"] {
+  opacity: 0;
+  right: 90vw;
+}
+
+.EntryGrowIcon {
+  position: sticky;
+  right: 50pt;
+  top: 0pt;
+  background: white;
+  height: 150pt;
+  width: 150pt;
+  border-radius: 75pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.EntryGrowIcon img {
+  height: 70%;
+  width: 70%;
+}
+
+.EntryGrowIcon[section="1"] {
+  opacity: 1;
+}
+
+.EntryGrowIcon[section="2"] {
+  opacity: 0;
+}
+
+.WhatsNewSection {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.WhatsNewSectionTitle {
+  position: fixed;
+  left: 10vw;
+  top: 0pt;
+  font-size: min(100pt, 15vw);
+  opacity: 0;
+  transition: opacity 0.5s, transform 1s, letter-spacing 0.5s;
+  transition-timing-function: ease;
+}
+
+.WhatsNewSectionTitle[section="1"] {
+  opacity: 0;
+  transform: scale(0.7);
+  letter-spacing: 0em;
+}
+
+.WhatsNewSectionTitle .SansSerifItalicFont {
+  transition-delay: 0.5s;
+  transition: letter-spacing 1s;
+  letter-spacing: 0.1em;
+}
+
+.WhatsNewSectionTitle[section="2"] {
+  transition-delay: 0.5s;
+  opacity: 1;
+  transform: scale(1);
+  letter-spacing: -0.10em;
+}
+
+.WhatsNewSectionTitle[section="2"] .SansSerifItalicFont {
+  transition-delay: 1s;
+  transition: letter-spacing 1s;
+  letter-spacing: -0.11em;
+}
+
+.WhatsNewAboutSection {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  position: relative;
+  width: 100%;
+}
+
+.WhatsNewColumn {
+  display: flex;
+  flex-flow: row wrap;
+}

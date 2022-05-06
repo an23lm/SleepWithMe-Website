@@ -1,0 +1,22 @@
+.WNVMain {
+    position: relative;
+    width: 40vw;
+}
+
+.WNVItem {
+    position: sticky;
+    left: 10vw;
+    top: 0pt;
+    margin-bottom: 10pt;
+}
+
+.WNVTitle {
+    font-size: 72pt;
+}
+
+.WNVDate {
+    margin-top: -15pt;
+    font-size: 24pt;
+    font-weight: 400;
+    font-style: italic;
+}

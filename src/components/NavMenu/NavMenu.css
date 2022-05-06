@@ -1,0 +1,47 @@
+.NavMenu {
+    margin-left: 4pt;
+    transform: rotate(180deg);
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+}
+
+.NavMenuItem {
+    margin-top: 20pt;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    font-size: 1em;
+    font-family: Roboto;
+    font-weight: 500;
+    pointer-events: all;
+    position: relative;
+    width: 20pt;
+}
+
+.NavMenuItem:hover .NavMenuItemSelector {
+    /* background: #333333; */
+    width: 100%;
+}
+
+.NavMenuItem:hover .NavMenuItemText {
+    color: black;
+}
+
+.NavMenuItemText {
+    width: 100%;
+    line-height: 20pt;
+    padding-top: 16pt;
+    padding-bottom: 10pt;
+    transition: all 0.3s;
+}
+
+.NavMenuItemSelector {
+    position: absolute;
+    height: 100%;
+    width: 0pt;
+    left: 0pt;
+    background: white;
+    transition: all 0.3s;
+    z-index: -1;
+}

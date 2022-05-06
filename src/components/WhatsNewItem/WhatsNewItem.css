@@ -1,0 +1,28 @@
+.WNIItem {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+
+.WNIIcon {
+    height: 30pt;
+    width: 30pt;
+}
+
+.WNIDescriptor {
+    margin-left: 20pt;
+}
+
+.WNITitle {
+    font-weight: 500;
+    font-size: 24pt;
+    font-style: italic;
+    margin-bottom: 8pt;
+}
+
+.WNIDescription {
+    font-weight: 500;
+    font-size: 18pt;
+}
