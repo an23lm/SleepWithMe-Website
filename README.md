@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SleepWithMe Website
+
+![Screenshot 2022-05-06 at 21 01 31](https://user-images.githubusercontent.com/5507600/167167167-b90118ac-e86b-4d03-88b9-20bc98b49055.gif)
 
 ## Available Scripts
 
