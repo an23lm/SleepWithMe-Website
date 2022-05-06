@@ -1,6 +1,6 @@
 # SleepWithMe Website
 
-![Screenshot 2022-05-06 at 21 01 31](https://user-images.githubusercontent.com/5507600/167167167-b90118ac-e86b-4d03-88b9-20bc98b49055.gif)
+![Screenshot 2022-05-06 at 21 19 38](https://user-images.githubusercontent.com/5507600/167168143-bff61cc6-6dd9-4798-886b-73384e8a773a.gif)
 
 ## Available Scripts
 
