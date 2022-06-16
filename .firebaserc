@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "an23lm-12126"
+  },
+  "targets": {
+    "an23lm-12126": {
+      "hosting": {
+        "get-sleepwithme": [
+          "get-sleepwithme"
+        ]
+      }
+    }
+  }
+}
